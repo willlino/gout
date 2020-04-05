@@ -7,11 +7,10 @@ ADD . /src
 #     upx --brute /src/main.go
 
 WORKDIR /src/src
-RUN echo $(ls)
 RUN go test 
 
 # FROM scratch
 # WORKDIR /usr/bin
 # COPY --from=build /src/main.go /usr/bin
 
-ENTRYPOINT ["main.go"]
+ENTRYPOINT ["go", "main.go"]
