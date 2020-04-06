@@ -1,4 +1,4 @@
 steps:
   - id: "Rodando docker-compose"
-    name: 'gcr.io/codeeducation-teste-262515/docker-compose:1.24.0'
+    name: 'gcr.io/$PROJECT_ID/docker-compose:1.24.0'
     args: ['-f', 'docker-compose.yml', 'up', '-d'] 
