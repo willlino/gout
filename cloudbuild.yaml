@@ -1,4 +1,7 @@
 steps:
   - id: "Rodando docker-compose"
     name: 'gcr.io/$PROJECT_ID/docker-compose:1.24.0'
-    args: ['-f', 'docker-compose.yaml', 'up', '-d'] 
+    args: ['-f', 'docker-compose.yaml', 'up', '-d']
+
+images:
+- 'gcr.io/$PROJECT_ID/gout:latest'
