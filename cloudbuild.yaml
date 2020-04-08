@@ -3,5 +3,4 @@ steps:
     name: 'gcr.io/$PROJECT_ID/docker-compose:1.24.0'
     args: ['-f', 'docker-compose.yaml', 'up', '-d']
 
-# images:
-# - 'gcr.io/$PROJECT_ID/gout:latest'
+images: ['gcr.io/$PROJECT_ID/gout:latest']
