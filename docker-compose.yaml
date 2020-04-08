@@ -2,6 +2,7 @@ version: '3.7'
 
 services:
   app:
+    image: gcr.io/gout-273114/gout:latest
     build: .
     container_name: gout
     restart: always
