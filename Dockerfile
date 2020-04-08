@@ -7,7 +7,7 @@ ADD . /src
 #     upx --brute /src/main.go
 
 WORKDIR /src/src
-RUN go test 
+# RUN go test 
 
 # FROM scratch
 # WORKDIR /usr/bin
