@@ -9,7 +9,7 @@ func main() {
 }
 
 func soma(number1 float32, number2 float32) float32 {
-	soma := number1 + number2 + 1
+	soma := number1 + number2
 
 	return soma
 }
